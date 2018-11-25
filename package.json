@@ -1,0 +1,10 @@
+{
+  "name": "portfolio-site-html",
+  "version": "1.0.0",
+  "description": "hh portfolio site workshop",
+  "main": "index.html",
+  "repository": "git@github.com:andersr/hh-personal-site-workshop.git",
+  "author": "Anders Ramsay <andersr@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
