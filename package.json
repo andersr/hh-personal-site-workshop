@@ -2,17 +2,25 @@
   "name": "portfolio-site-html",
   "version": "1.0.0",
   "description": "hh portfolio site workshop",
-  "main": "index.html",
+  "main": "./dist/index.html",
   "repository": "git@github.com:andersr/hh-personal-site-workshop.git",
   "author": "Anders Ramsay <andersr@gmail.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "http-server ./src",
+    "server": "http-server dist",
+    "dev": "reload --dir dist",
+    "sass": "sass --watch --no-source-map src/styles.scss dist/styles.css",
     "deploy": "surge --domain https://hh-portfolio-site.surge.sh --project /Users/andersjramsay/dev/hh/portfolio-site-html/dist",
-    "build": "cp src/* dist"
+    "build": "cp src/*.html dist"
   },
   "devDependencies": {
-    "http-server": "^0.11.1"
-  }
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.11.1",
+    "reload": "^2.3.1",
+    "sass": "^1.15.1",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {}
 }
