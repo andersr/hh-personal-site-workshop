@@ -8,8 +8,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "http-server",
-    "deploy": "surge --domain https://hh-portfolio-site.surge.sh"
+    "dev": "http-server ./src",
+    "deploy": "surge --domain https://hh-portfolio-site.surge.sh --project /Users/andersjramsay/dev/hh/portfolio-site-html/dist",
+    "build": "cp src/* dist"
   },
   "devDependencies": {
     "http-server": "^0.11.1"
